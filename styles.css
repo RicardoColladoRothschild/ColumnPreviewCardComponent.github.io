@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400&family=Inter:wght@300;500&family=Lexend+Deca&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
 :root{
     --sedansColor:#e38826;
     --suvsColor:#006970;
@@ -19,6 +20,11 @@ body{
     height: 100vh;
     display:grid;
     place-items:center;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 .container{
@@ -30,29 +36,91 @@ body{
 }
 
 .product-container{
-    width:75%;
-    height: auto;
-    
-    margin-bottom: 10px;
-    
+    width:245px;
+    height: 340px;
+    font-size: 1.2rem;
+    color:whitesmoke;
+    line-height: 2.0rem;
+    padding:25px;   
 
 }
 
-.product-container h2{
-    margin-bottom: 15px;
-}
 
 .image-container{
     width:125px;
-    margin:20px;
+    margin-bottom: 20px;
+    margin-top:10px;
+    
+}
+
+.product-container h2{
+    margin-bottom: 25px;
+    font-size: 3.0rem;
 }
 
 .product-container-sedans{
     background-color: var(--sedansColor);
-    width:230px;
-    height: 375px;
-    font-size: 1.6rem;
-    color:whitesmoke;
-    line-height: 2.2rem;
-    padding:25px;
+    margin-top: 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.primary-button-sedans{
+    margin-top:30px;
+    
+    color:var(--sedansColor);
+    width:125px;
+    height: 41px;
+    padding:0 15px;
+    border:none;
+    border-radius: 25px;
+}
+.primary-button-sedans:hover{
+    background-color: var(--sedansColor);
+    color:white;
+    border: 1px solid white;
+}
+/*SUVS*/
+
+.product-container-suvs{
+    background-color: var(--suvsColor);
+
+}
+.primary-button-suvs{
+    margin-top:30px;
+    width:125px;
+    height: 41px;
+    padding:0 15px;
+    border:none;
+    border-radius: 25px;
+    color:var(--suvsColor);
+}
+.primary-button-suvs:hover{
+    background-color: var(--suvsColor);
+    color:white;
+    border: 1px solid white;
+}
+
+.product-container-luxury{
+    background-color: var(--luxuryColor);
+    margin-bottom: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+.primary-button-luxury{
+    margin-top:30px;
+    width:125px;
+    height: 41px;
+    padding:0 15px;
+    border:none;
+    border-radius: 25px;
+    color:var(--luxuryColor);
+}
+
+.primary-button-luxury:hover{
+    background-color: var(--luxuryColor);
+    color:white;
+    bordeR: 1px solid white;
 }
